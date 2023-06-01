@@ -8,7 +8,7 @@ def number_to_letter(number):
 
 def input_matrix():
     new_key_matrix = []
-    print("Enter the elements of the key matrix:")
+    print("Enter the elements of the key matrix (2x2 matrix):")
     try:
         for i in range(2):
             row = []
