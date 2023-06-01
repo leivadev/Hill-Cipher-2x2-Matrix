@@ -32,6 +32,18 @@ Follow instructions to interact with the program.
 
 You need to have Python 3.x installed on your system to run the program.
 
+## How does the program work?
+
+First of all, i chose the word "**Byte**" for the plaintext example but any four-letter word can be used. The code applies the upper function to make the word uppercase, and then splits the word in 2 vectors, then, the vectors pass through a conversion table to encrypt the word, here's the process:
+
+![word_to_numbers](gifs_explanation/hillCipher1-luis.leivadev.gif)
+
+The key part to make the cipher work is, well, the key matrix. **To create one**, you need to ensure that the matrix have an **inverse**, the determinant has to be **non-zero**, and it doesn't have to be divisible by **2 or 13**.
+If we have the key matrix, the code executes a matrix multiplication with both vectors and apply the modulo 26 to optain the encrypted word:
+
+![something idk](gifs_explanation/hillCipher2-luis.leivadev.gif)
+
+With this information, the encrypted word of BYTE is XSRG.
 ## Contributing
 
 Contributions to this project are welcome. If you find any issues or want to enhance the program, feel free to create a pull request!🤗
