@@ -59,6 +59,10 @@ Contributions to this project are welcome. If you find any issues or want to enh
 You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star!🌟
 Thank you!
 
+## License
+
+HillCipher_2x2 is distributed under the [MIT License](https://opensource.org/licenses/MIT).
+
 ## Author
 
 - [Luis Leiva](https://github.com/Luislev) - Software Development Student at _Universidad Tecnológica de Panamá_
