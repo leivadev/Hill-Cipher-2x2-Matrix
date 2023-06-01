@@ -18,9 +18,9 @@ To use the code, you can follow these steps:
 
    `git clone https://github.com/Luislev/HillCipher_2x2.git`
 
-2. navigate to the directory and run the 'HillCipher.py' file:
+2. navigate to the directory and run the 'hill_cipher.py' file:
 
-    `python3 HillCipher.py`
+    `python3 hill_cipher.py`
 
 Once it's done, the program will present a menu with the following options:
  - **About key matrix**: Edit, view, or reset the current key matrix.
