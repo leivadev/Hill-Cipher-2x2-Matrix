@@ -47,7 +47,7 @@ def vector_matrix_multiplication(key_matrix, vector):
     return result
 
 
-def hill_cypher(word, key_matrix):
+def hill_encrypt(word, key_matrix):
     encrypted_word = ""
     for i in range(0, len(word), 2):
         vector = [letter_to_number(word[i]), letter_to_number(word[i + 1])]
@@ -58,7 +58,7 @@ def hill_cypher(word, key_matrix):
     return encrypted_word
 
 
-def hill_decypher(encrypted_word, key_matrix):
+def hill_decrypt(encrypted_word, key_matrix):
     decrypted_word = ""
     for i in range(0, len(encrypted_word), 2):
         vector = [letter_to_number(encrypted_word[i]), letter_to_number(encrypted_word[i + 1])]
@@ -102,7 +102,7 @@ def main():
                 print("You need to input 4 letters!\n")
                 continue
 
-            encrypted = hill_cypher(word.upper(), key_matrix)
+            encrypted = hill_encrypt(word.upper(), key_matrix)
             print("Word:", word)
             print("Encrypted word:", encrypted)
 
@@ -111,7 +111,7 @@ def main():
             if len(encrypted) != 4:
                 print("You need to input 4 letters!\n")
                 continue
-            decrypted = hill_decypher(encrypted.upper(), key_matrix)
+            decrypted = hill_decrypt(encrypted.upper(), key_matrix)
             print("Encrypted word:", encrypted)
             print("Decrypted word:", decrypted)
 
