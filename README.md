@@ -12,7 +12,7 @@ I aimed to enhance my knowledge about matrix, determinant, modular arithmetic, a
 
 ## Usage
 
-To use the code, you can follow these steps:
+To use the program, you can follow these steps:
 
 1. Clone the repository:
 
@@ -22,13 +22,14 @@ To use the code, you can follow these steps:
 
     `python3 hill_cipher.py`
 
-Once it's done, the program will present a menu with the following options:
+Once it's done, it will present a menu with the following options:
+
  - **About key matrix**: Edit, view, or reset the current key matrix.
  - **Encrypt word**: Enter a word and encrypt it using the Hill cipher.
- - **Decrypt word**: Enter an encrypted word and decrypt it using the Hill cipher.
+ - **Decrypt word**: Enter an encrypted word and decrypt it using the Hill decipher.
  - **Exit**: Quit the program.
 
-Follow instructions to interact with the program.
+Now you can interact with the program.
 
 You need to have Python 3.x installed on your system to run the program.
 
@@ -41,9 +42,17 @@ First of all, i chose the word "**Byte**" for the plaintext example but any four
 The key part to make the cipher work is, well, the key matrix. **To create one**, you need to ensure that the matrix have an **inverse**, the determinant has to be **non-zero**, and it doesn't have to be divisible by **2 or 13**.
 If we have the key matrix, the code executes a matrix multiplication with both vectors and apply the modulo 26 to optain the encrypted word:
 
-![something idk](gifs_explanation/hillCipher2-luis.leivadev.gif)
+![encryption_word](gifs_explanation/hillCipher2-luis.leivadev.gif)
 
-With this information, the encrypted word of BYTE is XSRG.
+With this information, the encrypted word of **BYTE** is **XSRG**.
+
+To decrypt a coded word, we need the inverse of the key matrix in modulo 26 just like in this GIF:
+
+![inverse_key_matrix](gifs_explanation/hillCipher3-luis.leivadev.gif)
+
+Once we have obtained the inverse of the key matrix in modulo 26, we compute it with the vectors of the encrypted word (in this case i'm using **XSRG**), reversing the encryption process until we get the decrypted word.
+
+![decryption_word](gifs_explanation/hillCipher4-luis.leivadev.gif)
 ## Contributing
 
 Contributions to this project are welcome. If you find any issues or want to enhance the program, feel free to create a pull request!🤗
