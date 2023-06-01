@@ -55,7 +55,8 @@ Once we have obtained the inverse of the key matrix in modulo 26, we compute it 
 ![decryption_word](gifs_explanation/hillCipher4-luis.leivadev.gif)
 ## Contributing
 
-Contributions to this project are welcome. If you find any issues or want to enhance the program, feel free to create a pull request!🤗
+Contributions to this project are welcome. If you find any issues or want to enhance the program, feel free to fork the repo create a pull request!🤗
+You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star!🌟 Thanks again!
 
 ## Author
 
