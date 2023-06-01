@@ -83,7 +83,8 @@ def main():
         if choice == "1":
             print("\nAbout key matrix:")
             print("1. Edit the key matrix")
-            print("2. See value of key matrix")
+            print("2. See value of the key matrix")
+            print("3. Reset key matrix to default value ([3, 3], [2, 5])")
 
             key_matrix_choice = input("Enter your choice: ")
 
@@ -91,10 +92,17 @@ def main():
                 new_key_matrix = input_matrix()
                 if new_key_matrix is not None:
                     key_matrix = new_key_matrix
-                    print("Key matrix updated successfully!")
+                    print("Key matrix updated successfully!\n")
 
             elif key_matrix_choice == "2":
                 print("Value of Key Matrix:", key_matrix)
+
+            elif key_matrix_choice == "3":
+                if key_matrix == [[3, 3,], [2, 5]]:
+                    print("You are using the default value!\n")
+                else:
+                    key_matrix = [[3, 3,], [2, 5]]
+                    print("key matrix reset successfully!\n")
 
         elif choice == "2":
             word = input(str("Enter a word of 4 letters: "))
