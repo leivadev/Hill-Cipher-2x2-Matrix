@@ -28,7 +28,7 @@ def inverse_matrix(key_matrix):
     if determinant == 0 or not len(key_matrix) == 2:
         return None
     for i in range(26):
-        ecuation = (i * 9) % 26
+        ecuation = (i * determinant) % 26
         if ecuation == 1:
             scalar = i
             break
