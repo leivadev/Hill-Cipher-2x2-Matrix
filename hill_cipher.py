@@ -5,6 +5,9 @@ def letter_to_number(letter):
 def number_to_letter(number):
     return chr(number + ord('A'))
 
+def determinant_matrix(key_matrix):
+     determinant = key_matrix[0][0] * key_matrix[1][1] - key_matrix[0][1] * key_matrix[1][0]
+     return determinant
 
 def input_matrix():
     new_key_matrix = []
@@ -23,7 +26,7 @@ def input_matrix():
 
 
 def inverse_matrix(key_matrix):
-    determinant = key_matrix[0][0] * key_matrix[1][1] - key_matrix[0][1] * key_matrix[1][0]
+    determinant = determinant_matrix(key_matrix)
     scalar = 0
     if determinant == 0 or not len(key_matrix) == 2:
         return None
