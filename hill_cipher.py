@@ -19,6 +19,12 @@ def input_matrix():
                 element = int(input(f"Enter element [{i}][{j}]: "))
                 row.append(element)
             new_key_matrix.append(row)
+        if determinant_matrix(new_key_matrix) == 0:
+            print("You can't use this key matrix! make sure that it has a non-zero determinant.\n")
+            return None
+        elif determinant_matrix(new_key_matrix) % 2 == 0 or determinant_matrix(new_key_matrix) % 13 == 0:
+            print("You can't use this key matrix! make sure that it's not divisible by 2 or 13.\n")
+            return None
         return new_key_matrix
     except ValueError:
         print("Invalid input. Please enter integers only.\n")
