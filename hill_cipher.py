@@ -17,6 +17,9 @@ def input_matrix():
             row = []
             for j in range(2):
                 element = int(input(f"Enter element [{i}][{j}]: "))
+                if element == 0 or element > 26:
+                    print("You can't use this value! make sure to use a number between 1 and 26.\n")
+                    return None
                 row.append(element)
             new_key_matrix.append(row)
         if determinant_matrix(new_key_matrix) == 0:
