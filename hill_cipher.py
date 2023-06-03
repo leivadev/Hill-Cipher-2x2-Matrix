@@ -1,3 +1,26 @@
+"""
+This code implements a Hill cipher encryption and decryption algorithm.
+
+The Hill cipher is a polygraphic substitution cipher that encrypts and decrypts messages using a key matrix.
+The key matrix is a 2x2 matrix of integers, and the cipher operates on blocks of 2 letters at a time.
+
+The code consists of several functions:
+- letter_to_number: Converts a letter to its corresponding numerical representation.
+- number_to_letter: Converts a number to its corresponding letter representation.
+- determinant_matrix: Calculates the determinant of a 2x2 matrix.
+- input_matrix: Prompts the user to input a new key matrix and returns it.
+- inverse_matrix: Calculates the modular inverse of the key matrix.
+- vector_matrix_multiplication: Performs matrix multiplication between the key matrix and a vector.
+- hill_encrypt: Encrypts a word using the Hill cipher algorithm and the provided key matrix.
+- hill_decrypt: Decrypts an encrypted word using the Hill cipher algorithm and the provided key matrix.
+- main: It presents a menu to the user for key matrix management, word encryption, and decryption.
+
+Note: This code uses a modulo 26 arithmetic for encryption and decryption.
+
+Author: Luis Leiva
+Date: 06/03/2023
+"""
+
 def letter_to_number(letter):
     return ord(letter) - ord('A')
 
@@ -5,9 +28,11 @@ def letter_to_number(letter):
 def number_to_letter(number):
     return chr(number + ord('A'))
 
+
 def determinant_matrix(key_matrix):
      determinant = key_matrix[0][0] * key_matrix[1][1] - key_matrix[0][1] * key_matrix[1][0]
      return determinant
+
 
 def input_matrix():
     new_key_matrix = []
