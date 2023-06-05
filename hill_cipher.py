@@ -146,6 +146,9 @@ def main():
             if len(word) != 4:
                 print("You need to input 4 letters!\n")
                 continue
+            if not word.isalpha():
+                print("The input must contain letters of the alphabet only.\n")
+                continue
 
             encrypted = hill_encrypt(word.upper(), key_matrix)
             print("Word:", word)
@@ -156,6 +159,9 @@ def main():
             if len(encrypted) != 4:
                 print("You need to input 4 letters!\n")
                 continue
+            if not encrypted.isalpha():
+                print("The input must contain letters of the alphabet only.\n")
+                continue
             decrypted = hill_decrypt(encrypted.upper(), key_matrix)
             print("Encrypted word:", encrypted)
             print("Decrypted word:", decrypted)
@@ -165,7 +171,7 @@ def main():
             break
 
         else:
-            print("Invalid choice. Please select a valid option.")
+            print("Invalid choice. Please select a valid option.\n")
 
 
 if __name__ == "__main__":
