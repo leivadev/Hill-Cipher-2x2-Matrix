@@ -24,7 +24,7 @@ To use the program, you can follow these steps:
 
 Once it's done, it will present a menu with the following options:
 
- - **About key matrix**: Edit, view, or reset the current key matrix.
+ - **About key matrix**: Edit, view, or reset the current key matrix to a default value.
  - **Encrypt word**: Enter a word and encrypt it using the Hill cipher.
  - **Decrypt word**: Enter an encrypted word and decrypt it using the Hill decipher.
  - **Exit**: Quit the program.
@@ -70,5 +70,6 @@ HillCipher_2x2 is distributed under the [MIT License](https://opensource.org/lic
 ## References
  - [Hill cipher - Wikipedia](https://www.wikipedia.org/wiki/Hill_cipher)
  - [Hill Cipher - GeeksforGeeks](https://www.geeksforgeeks.org/hill-cipher/)
+ - [Hill Cipher - Crypto Corner](https://crypto.interactive-maths.com/hill-cipher.html)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
