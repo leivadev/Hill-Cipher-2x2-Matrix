@@ -38,9 +38,9 @@ def input_matrix():
     new_key_matrix = []
     print("Enter the elements of the key matrix (2x2 matrix):")
     try:
-        for i in range(2):
+        for j in range(2):
             row = []
-            for j in range(2):
+            for i in range(2):
                 element = int(input(f"Enter element [{i}][{j}]: "))
                 if element == 0 or element > 26:
                     print("You can't use this value! make sure to use a number between 1 and 26.\n")
